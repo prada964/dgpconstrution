@@ -1,0 +1,111 @@
+.footer {
+    position: relative;
+    z-index: 9999;
+    
+  
+    .footer-content {
+      .footer-content__main{
+        width: 25%;
+      }
+      justify-content: space-between;
+      padding: 3rem 0rem;
+      align-items: center; 
+  
+      @media #{$extra-small} {
+        flex-direction: column;
+      }
+  
+      &__main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+  
+        @media #{$extra-small} {
+          align-items: center;
+          margin-bottom: 2rem;
+        }
+  
+     
+        p {
+          font-size: 1.4rem;
+          font-family: $principal-light;
+          margin: 2rem 0rem 2rem 0rem !important;
+          line-height: 1.8;
+          color: $blanco;
+        }
+      }
+  
+      &__social-media {
+        display: flex;
+        justify-content: space-around;
+        width: 265px;
+        i {
+          margin-top: 1rem;
+          padding: 1rem;
+          border-radius: .5rem;
+          background: rgba(255, 255, 255, 0.40);
+          color: $blanco;
+        }
+      }
+  
+      &__contact {
+        min-height: 20rem;
+        width: 25.4rem;
+  
+        p {
+          color: $blanco;
+          text-shadow: 0px 2px 2px rgba(46, 1, 1, 0.32);
+          font-family: $principal-light;
+          font-size: 1.8rem;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          word-wrap: break-word;
+          max-width: 100%;
+          font-family: $principal-light; 
+           @media #{$extra-small} {
+            font-family: $principal-bold;
+           }
+        }
+  
+        @media #{$extra-small} {
+          margin-top: 4rem;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+  
+        ul {
+          list-style: none;
+          color: $blanco;
+          font-family: $principal;
+          margin-top: 2rem;
+           @media #{$extra-small} {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+          
+           }
+          a{
+            color: $blanco;
+              @media #{$extra-small} {
+                  font-size: $principal-light;
+                }
+          }
+            li {
+              margin-left: 2rem;
+              font-size: 1.4rem;
+              font-family: $principal-light;
+              line-height: 1.7;
+              margin: 1.5rem 0rem;
+              word-break: break-word;
+              
+            }
+          
+          
+        }
+      }
+    }
+  }
+  

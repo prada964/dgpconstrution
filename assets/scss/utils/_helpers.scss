@@ -1,0 +1,45 @@
+ .fixed-header{
+   .header__content-menu{
+        nav{
+           ul{
+                li{
+                    a{
+                        color: $blanco;
+                        @media #{$extra-small} {
+                            color: $negro;
+                            display: flex;
+                            width: 100%;
+                            justify-content: space-between;
+                        }
+                        &:hover{
+                            color:$amarillo;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.single{
+    .fixed-header{
+        background-color: $blanco !important;
+        
+        .header__content-menu{
+             nav{
+                ul{
+                     li{
+                         a{
+                             color: #000;
+                             @media #{$extra-small} {
+                                display: flex;
+                                width: 100%;
+                                justify-content: space-between;
+                            }
+                         }
+                     }
+                 }
+             }
+         }
+     }
+    
+}

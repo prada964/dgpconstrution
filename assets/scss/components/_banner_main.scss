@@ -1,0 +1,115 @@
+.banner-video { 
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    &.height-img{
+        height: 50vh;
+        @media #{$extra-small} {
+            height: 50vh;
+        }
+    }
+
+    &::before {
+        content: "";
+        position: absolute; 
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); 
+        z-index: 1;
+    }
+
+    &__video {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 100%; 
+        height: 100%;
+        z-index: -100;
+        overflow: hidden;
+        object-fit: cover; 
+        background-size: cover;
+        background-position-y: 9%; 
+    }
+
+    &__contenido {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        color: white;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        &.title-banner-main{
+           
+            @media #{$extra-small} {
+                width: 100%;
+            }
+            h1{
+                margin-top: 3rem;
+                color: $blanco;
+                text-shadow: 0px 2px 2px rgba(46, 1, 1, 0.32);
+                font-size: 4.5rem;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                @media #{$extra-small} {
+                    width: 100%;
+                    font-size: 3.2rem;
+                }
+            }
+        }
+
+       
+       h1 { 
+            color: $blanco;
+            font-size: 4rem;
+            margin-bottom: 3rem;
+          
+            font-weight: 100;
+
+            @media #{$extra-small} {
+                font-size: 3rem;
+            }
+        }
+
+        span {
+            color: $amarillo;
+            font-family: $principal-bold;
+        }
+        p{
+            color: $blanco;
+            text-shadow: 0px 2px 2px rgba(46, 1, 1, 0.32);
+            font-family: $principal;
+            font-size: 1.8rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        a {
+            margin: 0rem;
+        }
+        .breadcrumb{
+            border-radius: 5px;
+            backdrop-filter: blur(10px);
+            width: fit-content;
+            font-family: $principal;
+            font-size: 2rem !important;
+            @media #{$extra-small} {
+                margin-top: 1rem;
+        }
+        a{
+            color: $negro !important;
+            font-size: 2rem !important;
+            font-family: $principal !important;
+        }
+    }
+
+    }
+    
+}

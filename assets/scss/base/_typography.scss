@@ -1,0 +1,52 @@
+/*
+Aqui van todas las configuraciones referentes a la typografia
+@font-face
+*/
+$url--font: '../fonts/';
+
+  @font-face {
+    font-family: 'Onest-Regular';
+    src: url('#{$url--font}onest/Onest-Regular.ttf') format('woff');
+  
+    font-weight: normal;
+    font-style: normal;
+  }
+    @font-face {
+        font-family: 'Onest-Bold';
+        src: url('#{$url--font}onest/Onest-Bold.ttf') format('woff');
+    
+        font-weight: bold;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: 'Onest-Black';
+        src: url('#{$url--font}onest/Onest-Black.ttf') format('woff'); 
+    
+        font-weight: 900;
+        font-style: normal;
+    }
+    //Onest semibold
+    @font-face {
+        font-family: 'Onest-SemiBold';
+        src: url('#{$url--font}onest/Onest-SemiBold.ttf') format('woff');
+    
+        font-weight: 600;
+        font-style: normal;
+    }
+    //Onest light
+    @font-face {
+        font-family: 'Onest-Light';
+        src: url('#{$url--font}onest/Onest-Light.ttf') format('woff');
+    
+        font-weight: 300;
+        font-style: normal;
+    }
+    //Ones Extra bold
+    @font-face {
+        font-family: 'Onest-Black';
+        src: url('#{$url--font}onest/Onest-ExtraBold.ttf') format('woff');
+    
+        font-weight: 800;
+        font-style: normal;
+    }
+    

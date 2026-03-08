@@ -1,0 +1,196 @@
+.slider_principal {
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+
+    @media #{$extra-small} {
+        justify-content: flex-start !important;
+    }
+
+    .contenido-slider {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        width: 70%;
+        padding-left: 10rem;
+
+        @media #{$extra-small} {
+            width: 100%;
+            align-items: center !important;
+            padding: 1rem 5rem;
+        }
+        a{
+             @media #{$extra-small} {
+                font-size: 1.2rem;
+                padding: 1rem !important;
+             }
+        }
+
+        span {
+            color: $amarillo;
+            font-family: $principal-bold;
+        }
+
+        h1 {
+            color: $blanco;
+            font-size: 7rem;
+            margin-bottom: 3rem;
+            font-family: $extra-bold;
+            font-weight: 100;
+            text-align: center;
+
+            @media #{$extra-small} {
+                font-size: 2.5rem;
+                text-align: center !important;
+            }
+        }
+
+        // ✅ Botones ahora usan el componente global
+        a {
+            @extend .mec-button;
+            background-color: $amarillo;
+            color: $negro;
+            margin-left: 0 !important;
+            font-family: $principal-bold;
+        }
+    }
+}
+
+/* ======================
+   ALINEACIÓN DE TEXTO
+====================== */
+.text-left {
+    text-align: left !important;
+    margin-left: 9rem !important;
+
+    @media #{$extra-small} {
+        margin-left: 0 !important;
+        text-align: center !important;
+    }
+}
+
+.text-right {
+    text-align: left !important;
+    margin-right: 9rem !important;
+
+    @media #{$extra-small} {
+        margin-right: 0 !important;
+        text-align: center !important;
+    }
+}
+
+/* ======================
+   ANIMACIÓN DE TEXTOS
+====================== */
+.contenido-slider p {
+    opacity: 0;
+    transform: translateX(-40px);
+    transition: opacity 1.2s ease, transform 1.2s ease;
+    will-change: opacity, transform;
+
+    @media #{$extra-small} {
+        text-align: center;
+    }
+}
+
+.splide__slide.is-active .contenido-slider p {
+    opacity: 1;
+    transform: translateX(0);
+    transition-delay: 1.2s; // después del h1
+}
+
+/* ======================
+   FLECHAS DEL SLIDER
+====================== */
+.splide__arrow--prev {
+    display: none;
+
+}
+
+.splide__arrow--next {
+    display: none;
+}
+
+.splide__arrow {
+
+
+    border: 1px solid #fff;
+    background: transparent;
+
+    svg {
+        fill: #fff;
+    }
+}
+
+/* ======================
+   PAGINACIÓN DEL SLIDER
+====================== */
+.splide__pagination {
+    bottom: 30rem;
+    right: 2rem;
+    left: unset;
+    flex-direction: column-reverse;
+
+    @media #{$extra-small} {
+        bottom: 15rem;
+        right: 0;
+        left: 0;
+        flex-direction: unset;
+    }
+
+
+    .splide__pagination__page {
+        background-color: $amarillo !important;
+        opacity: 1 !important;
+
+        &.is-active {
+            width: 15px;
+            height: 15px;
+            border-radius: 4rem !important;
+            transform: scale(1.4);
+            z-index: 1;
+        }
+    }
+}
+
+/* ======================
+   EFECTOS DE IMAGEN Y TEXTOS
+====================== */
+.d-flex.slider_principal {
+    opacity: 0;
+    transform: scale(1.08);
+    transition: opacity 2.5s ease, transform 3s ease;
+    will-change: opacity, transform;
+}
+
+.splide__slide.is-active .d-flex.slider_principal {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Animación de textos */
+.contenido-slider h1,
+.contenido-slider a {
+    opacity: 0;
+    transform: translateX(-60px);
+    transition: opacity 1.2s ease, transform 1.2s ease;
+    will-change: opacity, transform;
+}
+
+/* Título visible después de la imagen */
+.splide__slide.is-active .contenido-slider h1 {
+    opacity: 1;
+    transform: translateX(0);
+    transition-delay: 0.8s;
+}
+
+/* Botones visibles después del título */
+.splide__slide.is-active .contenido-slider a {
+    opacity: 1;
+    transform: translateX(0);
+    transition-delay: 1.6s;
+}

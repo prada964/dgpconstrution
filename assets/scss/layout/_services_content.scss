@@ -1,0 +1,184 @@
+.service-section {
+    position: relative;
+    overflow: hidden;
+    padding: 6rem 0;
+
+     @media #{$extra-small} {
+            flex-direction: column;
+            padding: 6rem 2rem;
+        }
+
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image: url('../images/Logo-all-white.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 800px;
+        background-attachment: fixed;
+        opacity: 0.05;
+        z-index: 0;
+    }
+  //     &.active {
+  //       opacity: 1;
+  //       transform: translateY(0);
+  // }
+
+  &__content, &__media {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s ease-out 0.2s;
+  }
+
+  &.active &__content,
+  &.active &__media {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 4rem;
+
+        @media #{$extra-small} {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+
+    /* Variante para invertir el orden */
+    &.service-section--reverse {
+        .service-section__container {
+            flex-direction: row-reverse;
+
+            @media #{$extra-small} {
+                flex-direction: column;
+            }
+        }
+    }
+
+    /* Columna de imagen + números */
+    &__media {
+        flex: 1 1 50%;
+        text-align: center;
+        
+
+    }
+
+    &__image {
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+    }
+
+    &__numbers {
+        display: flex;
+        justify-content: left;
+        gap: 2rem;
+        margin-top: 2.5rem;
+
+        @media #{$extra-small} {
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+
+        .service-section__number {
+            background: $blanco;
+            width: 50%;
+            display: flex;
+            margin: 0;
+            padding: 6rem 2rem;
+            flex-direction: column;
+            text-align: center;
+            transition: all 0.3s ease;
+            align-items: flex-start;
+            @media #{$extra-small} {
+            width: 100%;
+        }
+
+
+            &:hover {
+                transform: scale(1) !important;
+                transform: translateY(-5px);
+                box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+            }
+
+            .number {
+                font-size: 5rem;
+                font-family: $principal-bold;
+                color: $gris_oscuro;
+                display: block;
+                margin-bottom: 0.5rem;
+                margin-bottom: 1rem;
+            }
+
+            p {
+                font-size: 1.4rem;
+                color: $negro;
+                margin: 0;
+                font-family: $principal-light;
+            }
+        }
+    }
+
+    /* Columna de contenido */
+    &__content {
+        flex: 1 1 50%;
+         @media #{$extra-small} {
+               display: flex;
+                flex-direction: column;
+                width: fit-content;
+                align-items: flex-start;
+        }
+
+        .service-section__label {
+            display: inline-block;
+            background-color: lighten($amarillo, 0%);
+            color: $negro_claro;
+            font-family: $principal-bold;
+            padding: 0.5rem 1.5rem;
+            border-radius: 5px;
+            font-size: 1.4rem;
+            margin-bottom: 2rem;
+        }
+
+        .service-section__title {
+            font-size: 4rem;
+            font-family: $extra-bold;
+            color: $blanco;
+            margin-bottom: 1.5rem;
+
+            @media #{$extra-small} {
+                font-size: 2.4rem;
+                text-align: left;
+            }
+        }
+
+        .service-section__description {
+            font-size: 1.6rem;
+            color: $blanco;
+            line-height: 1.6;
+            margin-bottom: 2.5rem;
+
+            @media #{$extra-small} {
+                font-size: 1.4rem;
+                text-align: left;
+            }
+        }
+    }
+
+    &__button {
+
+       margin: 0 !important;
+        
+    }
+}
+

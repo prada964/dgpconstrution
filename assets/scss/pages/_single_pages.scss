@@ -1,0 +1,97 @@
+// .single-services{
+//     .product-internal{
+//         &__container{
+//             img{
+//                 width: 500px;
+//             }
+//         }
+//     }
+// }
+.product-internal {
+    &__container {
+        &>div {
+            max-height: 45rem;
+        }
+
+        img {
+            width: 70rem;
+            max-height: 45rem;
+            object-fit: contain;
+        }
+
+        &-information {
+            h1 {
+                font-size: 48px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                line-height: 1;
+                text-transform: capitalize;
+            }
+
+            .category-product {
+                a {
+                    color: $amarillo;
+                }
+            }
+
+            p {
+                color: $gris;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+
+            &-characteristics {
+                p {
+                    color: $negro;
+                    font-family: $principal-bold;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+
+                }
+
+                span {
+                    color: $gris;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    margin-bottom: 1.5rem;
+
+                }
+
+                a {
+                    margin: 3rem 0rem;
+                    width: fit-content;
+                }
+            }
+        }
+    }
+    .modal{
+        z-index: 99999;
+    }
+    .modal-dialog-internas {
+        @media #{$extra-small} {
+            width: unset;
+    
+        }
+
+        @media (min-width: 900px) {
+            max-width: 1100px;
+        }
+        form {
+            display: flex;
+            width: 1000px;
+            @media #{$extra-small} {
+               flex-direction: column;
+               width: unset;
+        
+            }
+    
+        }
+
+    }
+}

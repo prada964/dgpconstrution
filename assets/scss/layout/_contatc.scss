@@ -1,0 +1,110 @@
+.container-contact-main {
+   
+    @media #{$extra-small} {
+        background-size: cover;
+        padding: 5rem 0rem;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: center;
+        padding: 6rem 0rem;
+
+        &-description {
+            width: 510px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            @media #{$extra-small} {
+                width: 100%;
+            }
+
+            h1 {
+                color: $blanco;
+                text-shadow: 0px 2px 2px rgba(46, 1, 1, 0.32);
+                font-size: 4.4rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                @media #{$extra-small} {
+                    font-size: 4.4rem;
+                }
+            }
+
+            hr {
+                height: 0.4rem;
+                width: 10rem;
+                background-color: $amarillo;
+                opacity: 1;
+                margin: 0;
+            }
+            h3{
+                font-size: 3.2rem;
+            }
+            h4 {
+                color: $blanco;
+                text-shadow: 0px 2px 2px rgba(46, 1, 1, 0.32);
+                font-size: 1.8rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 20px;
+                letter-spacing: 0.36px;
+            }
+
+            p {
+                color: $blanco;
+                font-size: 1.6rem;
+                font-style: normal;
+                font-weight: 500;
+                letter-spacing: 0.32px;
+                line-height: 2rem;
+                word-break: break-word;
+            }
+
+            img {
+                width: 3.2rem;
+                max-width: unset;
+                object-fit: contain;
+            }
+        }
+
+        &-form {
+            border-radius: .3rem;
+            background: $blanco;
+            padding: 6.4rem 4rem;
+            @media #{$extra-small} {
+                margin-top: 3rem;
+                padding: 3.7rem 3.1rem;
+            }
+
+            textarea {
+                background: #F7F7F7;
+                border: none;
+                margin-top: 2rem;
+                width: 100%;
+                padding: 1rem;
+            }
+
+            input {
+                width: 100%;
+                margin-top: 2rem;
+                border-radius: .3rem;
+                background: #F7F7F7;
+                padding: 1.4rem 2rem;
+                border: none;
+            }
+
+            input[type="submit"] {
+                background-color: $amarillo;
+                color: $negro;
+                font-family: $principal-bold;
+            }
+        }
+    }
+
+    &__content-row {
+        padding: 0rem 2rem !important;
+        justify-content: space-between;
+        width: 100%;
+    }
+}

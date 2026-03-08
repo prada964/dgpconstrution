@@ -1,0 +1,77 @@
+/* breakpoints */
+$extra-small: 'screen and (max-width : 576px)' !default;
+$small: 'screen and (min-width : 577px) and (max-width : 767px)' !default;
+$medium: 'screen and (min-width : 768px) and (max-width:1023px)' !default;
+$mediun-large: 'screen and (min-width : 1024px) and (max-width:1365px)' !default;
+$large: 'screen and (min-width : 1366px) and (max-width:1439px)' !default;
+$extra-large: 'screen and (min-width : 1440px) and (max-width:1919px)' !default;
+$extra-extra-large: 'screen and (min-width : 1920px)' !default;
+
+/*mixins*/
+@mixin extra-small() {
+    @media screen and (max-width : 576px) {
+        @content
+    }
+}
+@mixin small() {
+    @media screen and (min-width : 577px) and (max-width : 767px) {
+        @content
+    }
+}
+@mixin medium() {
+    @media screen and (min-width : 768px) and (max-width:1023px) {
+        @content
+    }
+}
+@mixin medium-large() {
+    @media screen and (min-width : 1024px) and (max-width:1365px) {
+        @content
+    }
+}
+@mixin large {
+    @media screen and (min-width : 1366px) and (max-width:1439px) {
+        @content
+    }
+}
+@mixin extra-large {
+    @media screen and (min-width : 1440px) and (max-width:1919px) {
+        @content
+    }
+}
+@mixin extra-extra-large {
+    @media screen and (min-width : 1920px) {
+        @content
+    }
+}
+
+
+$xs: 576px;
+$sm: 768px;
+$md: 992px;
+$lg: 1200px;
+$xxl: 1920px;
+$xxxl:2590px;
+
+/*Colores*/
+$gris_oscuro: #4E5150;
+$negro_claro: #333;
+$negro: #100E02;
+$blanco: #fff;
+$rojo: #DB0000;
+$amarillo: #FFBE11;
+$gris: #919191;
+$verde: #008000;
+
+/* tpografias*/
+$principal: 'Onest-Regular';
+$principal-bold: 'Onest-Bold';
+$principal-light: 'Onest-Light';
+$extra-bold : 'Onest-Black';
+
+
+
+
+
+
+
+

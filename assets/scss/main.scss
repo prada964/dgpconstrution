@@ -1,0 +1,42 @@
+//utils
+@import 'utils/variables';
+@import 'utils/helpers';
+
+//Base
+@import 'base/resets';
+@import 'base/typography';
+
+//components
+@import 'components/buttons';
+ @import 'components/content_highlight';
+// @import 'components/taxonomy-banners';
+// @import 'components/breadcrumbs';
+ @import 'components/banner_main';
+// @import 'components/cards';
+// @import 'components/block_img_tit_desc_boton';
+// @import 'components/block_tabs';
+@import 'components/grid_products';
+@import 'components/slider';
+@import 'components/social_media';
+
+//layout
+@import 'layout/_header';
+@import 'layout/_footer';
+ @import 'layout/products_grid';
+ @import 'layout/about';
+ @import 'layout/services';
+ @import 'layout/testimonials'; 
+ @import 'layout/slider_logos';
+  @import 'layout/services_content';
+// @import 'layout/emergency';
+ @import 'layout/experts_team';
+ @import 'layout/contatc';
+// @import 'layout/social_networks';
+
+
+//pages
+@import 'pages/single_pages';
+
+
+
+

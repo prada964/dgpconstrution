@@ -1,0 +1,49 @@
+.block-c__social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .social-container {
+        position: absolute;
+        display: flex;
+        transform: rotate(270deg);
+        width: 52%;
+        left: -27rem;
+        bottom: 54rem;
+         @media #{$extra-small} {
+            display: none;
+         }
+
+         @media screen and (min-width: 1920px) and (max-he: 1080px) {
+               left: -42rem;
+                bottom: 89rem;
+            
+         }
+        i {
+            color: #fff;
+        }
+
+        h2 {
+            font-size: 16px;
+            color: #fff;
+        }
+
+        hr {
+            width: 90px;
+            margin: 1rem 1rem;
+            border: 1px solid #fff;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 1rem;
+
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}

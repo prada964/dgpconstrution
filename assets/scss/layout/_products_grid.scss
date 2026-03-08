@@ -1,0 +1,58 @@
+.mec-lista_proyectos_grid{
+    background-color: $gris_oscuro;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 4rem 2rem;
+    margin: 4rem 0;
+    @media screen and (min-width: 400px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media screen and (min-width: $sm) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    @media screen and (min-width: $md) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    &-element{
+        margin-top: 5rem;
+        position: relative;
+        min-height: 18rem;
+        border-radius: 1.6rem;
+        background: $blanco;
+        box-shadow: 0 .1rem 3.2rem -.4rem rgba(145, 158, 171, 0.15), 0 0 .4rem 0 rgba(145, 158, 171, 0.15);
+        border: none;
+        &-image{
+            position: absolute;
+            width: 100%;
+            top: -5rem;
+            // transform: translateY(-5rem);
+            img{
+                object-fit: contain;
+                max-height: 15rem;
+            }
+        }
+        &-body{
+            display: flex;
+            align-items: end;
+            width: 100%;
+            justify-content: space-between;
+            padding: 0 2rem 2rem;
+            @media screen and (min-width: $lg) {
+                padding: 0 3rem 2rem;
+            }
+            h5{
+                color:$negro;
+                font-family: $principal;
+                font-size: 1.8rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                text-transform: capitalize;
+            }
+            &-link{
+                background-color: $rojo;
+                border-radius: .5rem;
+            }
+        }
+    }
+}
