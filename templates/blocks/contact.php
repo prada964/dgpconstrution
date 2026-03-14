@@ -9,6 +9,22 @@ $formulario_contacto = get_field('formulario_contacto');
 $id_section_contact = get_field('id_contacto');
 
 ?>
+<section class="feedback-section seccion-trama">
+    <div class="container">
+        <div class="feedback-card">
+            <h2>YOUR OPINION MATTERS</h2>
+            <p>How was your experience with our structural framing services?</p>
+            
+            <div class="rating-stars">
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+
+            <a href="URL_DE_GOOGLE_BUSINESS" target="_blank" class="btn-review">
+                RATE US ON GOOGLE
+            </a>
+        </div>
+    </div>
+</section>
 <section id="<?php echo ($id_section_contact); ?>" class="container-contact-main"
     style="background-image:url('<?php echo esc_url($imagen_fondo_contacto['url']) ?>');background-repeat: no-repeat;background-position: center center; background-size:cover;">
     <div class="container container-contact-main__content">

@@ -58,9 +58,17 @@ $negro_claro: #333;
 $negro: #100E02;
 $blanco: #fff;
 $rojo: #DB0000;
-$amarillo: #FFBE11;
+$azul_logo: #FFBE11;
 $gris: #919191;
+// Colores DGP Construction LLC
+$negro_base: #0a0a0a; // Un poco más claro para que la textura "respire"
+$azul_logo: #1E40AF;
 $verde: #008000;
+
+/* El Nuevo Protagonista */
+$azul_logo: #1E40AF;    /* Azul extraído del techo del logo */
+$azul_hover: #092063;   /* Versión para interacciones */
+$azul_light: rgba(30, 64, 175, 0.1); /* Para fondos sutiles de bloques */
 
 /* tpografias*/
 $principal: 'Onest-Regular';

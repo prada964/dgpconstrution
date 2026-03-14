@@ -620,3 +620,11 @@ if (servicesSection) {
    splidelogos.mount();
   
 });
+
+//Before and after slider
+window.addEventListener('load', function() {
+    // Forzamos a Juxtapose a recalcular el tamaño una vez cargada la trama
+    setTimeout(function() {
+        window.dispatchEvent(new Event('resize'));
+    }, 500);
+});

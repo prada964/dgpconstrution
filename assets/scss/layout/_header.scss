@@ -139,7 +139,7 @@
         }
 
           &:hover {
-            color: $amarillo;
+            color: $azul_logo;
           }
         }
 
@@ -256,13 +256,13 @@
 
     li {
       .sub-menu {
-        background-color: $amarillo;
+        background-color: $azul_logo;
       }
 
       &:has(.sub-menu) {
         &:hover {
           font-family: $principal-bold;
-          background-color: $amarillo;
+          background-color: $azul_logo;
           border-radius: 1rem 1rem 0rem 0rem;
           @media #{$extra-small} {
             background-color: unset

@@ -2,6 +2,10 @@
 /* breakpoints */
 /*mixins*/
 /*Colores*/
+/* El Nuevo Protagonista */
+/* Azul extraído del techo del logo */
+/* Versión para interacciones */
+/* Para fondos sutiles de bloques */
 /* tpografias*/
 .fixed-header .header__content-menu nav ul li a {
   color: #fff;
@@ -15,7 +19,7 @@
   }
 }
 .fixed-header .header__content-menu nav ul li a:hover {
-  color: #FFBE11;
+  color: #1E40AF;
 }
 
 .single .fixed-header {
@@ -211,7 +215,6 @@ Aqui van todas las configuraciones referentes a la typografia
   overflow: hidden;
   transition: all 0.3s ease;
   /* === Variantes === */
-  /* === Animación Hover Global === */
 }
 @media screen and (max-width : 576px) {
   .mec-button.menu-button, .slider_principal .contenido-slider a.menu-button {
@@ -221,17 +224,20 @@ Aqui van todas las configuraciones referentes a la typografia
   }
 }
 .mec-button.register-button, .slider_principal .contenido-slider a.register-button {
-  background: #FFBE11;
-  color: #100E02;
+  background: #1E40AF;
+  color: #fff;
 }
 .mec-button.visit-button, .slider_principal .contenido-slider a.visit-button {
   border: 0.1rem solid rgba(162, 175, 255, 0.3);
   background: rgba(2, 22, 151, 0.3);
 }
 .mec-button.outline-button, .slider_principal .contenido-slider a.outline-button {
-  border: 1px solid #FFBE11;
+  border: 1px solid #1E40AF;
   background: none !important;
   color: #fff !important;
+}
+.mec-button, .slider_principal .contenido-slider a {
+  /* === Animación Hover Global === */
 }
 .mec-button:hover, .slider_principal .contenido-slider a:hover {
   transform: scale(1.08);
@@ -260,7 +266,7 @@ Aqui van todas las configuraciones referentes a la typografia
 .quoter-action-button {
   margin-top: 2rem;
   width: fit-content;
-  background: #FFBE11;
+  background: #1E40AF;
   color: #fff;
   font-family: "Onest-Regular";
   font-size: 1.8rem;
@@ -372,7 +378,7 @@ Aqui van todas las configuraciones referentes a la typografia
 }
 .highlight-section__text > .highlight-section__label {
   display: inline-block;
-  background-color: #ffbe11;
+  background-color: #1e40af;
   color: #333;
   font-family: "Onest-Bold";
   padding: 0.5rem 1.5rem;
@@ -566,7 +572,7 @@ Aqui van todas las configuraciones referentes a la typografia
   }
 }
 .banner-video__contenido span {
-  color: #FFBE11;
+  color: #1E40AF;
   font-family: "Onest-Bold";
 }
 .banner-video__contenido p {
@@ -620,7 +626,7 @@ Aqui van todas las configuraciones referentes a la typografia
 .grid-products hr {
   height: 0.4rem;
   width: 10rem;
-  background-color: #FFBE11;
+  background-color: #1E40AF;
   opacity: 1;
   margin: 1;
 }
@@ -942,7 +948,7 @@ Aqui van todas las configuraciones referentes a la typografia
   }
 }
 .slider_principal .contenido-slider span {
-  color: #FFBE11;
+  color: #1E40AF;
   font-family: "Onest-Bold";
 }
 .slider_principal .contenido-slider h1 {
@@ -960,7 +966,7 @@ Aqui van todas las configuraciones referentes a la typografia
   }
 }
 .slider_principal .contenido-slider a {
-  background-color: #FFBE11;
+  background-color: #1E40AF;
   color: #100E02;
   margin-left: 0 !important;
   font-family: "Onest-Bold";
@@ -1049,7 +1055,7 @@ Aqui van todas las configuraciones referentes a la typografia
   }
 }
 .splide__pagination .splide__pagination__page {
-  background-color: #FFBE11 !important;
+  background-color: #1E40AF !important;
   opacity: 1 !important;
 }
 .splide__pagination .splide__pagination__page.is-active {
@@ -1117,7 +1123,13 @@ Aqui van todas las configuraciones referentes a la typografia
     display: none;
   }
 }
-@media screen and (min-width: 1920px) and (max-he: 1080px) {
+@media screen and (min-width: 1440px) and (max-width: 1919px) {
+  .block-c__social-media .social-container {
+    left: -32rem;
+    bottom: 68rem;
+  }
+}
+@media screen and (min-width: 1920px) and (max-height: 1080px) {
   .block-c__social-media .social-container {
     left: -42rem;
     bottom: 89rem;
@@ -1289,7 +1301,7 @@ Aqui van todas las configuraciones referentes a la typografia
   }
 }
 .header__nav ul li a:hover {
-  color: #FFBE11;
+  color: #1E40AF;
 }
 .header__nav ul li:has(.sub-menu):hover {
   background-color: rgba(37, 36, 36, 0.8);
@@ -1392,11 +1404,11 @@ Aqui van todas las configuraciones referentes a la typografia
   }
 }
 .single .header li .sub-menu {
-  background-color: #FFBE11;
+  background-color: #1E40AF;
 }
 .single .header li:has(.sub-menu):hover {
   font-family: "Onest-Bold";
-  background-color: #FFBE11;
+  background-color: #1E40AF;
   border-radius: 1rem 1rem 0rem 0rem;
 }
 @media screen and (max-width : 576px) {
@@ -1441,13 +1453,13 @@ Aqui van todas las configuraciones referentes a la typografia
   position: relative;
   z-index: 9999;
 }
+.footer .footer-content .footer-content__main {
+  width: 25%;
+}
 .footer .footer-content {
   justify-content: space-between;
   padding: 3rem 0rem;
   align-items: center;
-}
-.footer .footer-content .footer-content__main {
-  width: 25%;
 }
 @media screen and (max-width : 576px) {
   .footer .footer-content {
@@ -1707,7 +1719,7 @@ Aqui van todas las configuraciones referentes a la typografia
   width: 10rem;
   position: relative;
   height: 0.4rem;
-  background: #FFBE11;
+  background: #1E40AF;
   z-index: 2;
   opacity: 1;
   margin-bottom: 2.4rem;
@@ -1809,7 +1821,7 @@ Aqui van todas las configuraciones referentes a la typografia
   width: 80px;
   height: 4px;
   border: none;
-  background: #FFBE11;
+  background: #1E40AF;
   margin: 0;
   opacity: 1;
   width: 100%;
@@ -1829,8 +1841,8 @@ Aqui van todas las configuraciones referentes a la typografia
 .services-section .services-container .services-container-body .services-container-body-item {
   position: relative;
   overflow: hidden;
-  background: #FFBE11;
-  color: #000;
+  background: #1E40AF;
+  color: #fff;
   padding: 2rem 1.5rem;
   border-radius: 0.3rem;
   display: flex;
@@ -1842,7 +1854,7 @@ Aqui van todas las configuraciones referentes a la typografia
   transition: transform 0.4s ease, box-shadow 0.4s ease, background-color 0.4s ease;
 }
 .services-section .services-container .services-container-body .services-container-body-item:hover {
-  background-color: #fff;
+  background-color: #092063;
   transform: translateY(-8px) scale(1.08);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
 }
@@ -2009,7 +2021,7 @@ Aqui van todas las configuraciones referentes a la typografia
   width: 100px;
   height: 4px;
   border: none;
-  background: #FFBE11;
+  background: #1E40AF;
   margin: 0 auto 4rem auto;
   opacity: 0;
   transform: translateY(40px);
@@ -2035,7 +2047,7 @@ Aqui van todas las configuraciones referentes a la typografia
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border-bottom: 6px solid #FFBE11;
+  border-bottom: 6px solid #1E40AF;
   opacity: 0;
   transform: translateY(40px);
   transition: opacity 0.8s ease, transform 0.8s ease;
@@ -2131,7 +2143,7 @@ Aqui van todas las configuraciones referentes a la typografia
 .counter {
   font-size: 7.5rem;
   font-weight: bold;
-  color: #FFBE11;
+  color: #fff;
   font-family: "Onest-Bold";
 }
 @media screen and (max-width : 576px) {
@@ -2188,7 +2200,7 @@ Aqui van todas las configuraciones referentes a la typografia
   }
 }
 .slider-logos hr {
-  border: 3px solid #FFBE11;
+  border: 3px solid #1E40AF;
   width: 10%;
   margin: 0 auto 3rem auto;
   opacity: 1;
@@ -2237,9 +2249,6 @@ Aqui van todas las configuraciones referentes a la typografia
   position: relative;
   overflow: hidden;
   padding: 6rem 0;
-  /* Variante para invertir el orden */
-  /* Columna de imagen + números */
-  /* Columna de contenido */
 }
 @media screen and (max-width : 576px) {
   .service-section {
@@ -2281,6 +2290,9 @@ Aqui van todas las configuraciones referentes a la typografia
     text-align: center;
   }
 }
+.service-section {
+  /* Variante para invertir el orden */
+}
 .service-section.service-section--reverse .service-section__container {
   flex-direction: row-reverse;
 }
@@ -2288,6 +2300,9 @@ Aqui van todas las configuraciones referentes a la typografia
   .service-section.service-section--reverse .service-section__container {
     flex-direction: column;
   }
+}
+.service-section {
+  /* Columna de imagen + números */
 }
 .service-section__media {
   flex: 1 1 50%;
@@ -2347,6 +2362,9 @@ Aqui van todas las configuraciones referentes a la typografia
   margin: 0;
   font-family: "Onest-Light";
 }
+.service-section {
+  /* Columna de contenido */
+}
 .service-section__content {
   flex: 1 1 50%;
 }
@@ -2360,7 +2378,7 @@ Aqui van todas las configuraciones referentes a la typografia
 }
 .service-section__content .service-section__label {
   display: inline-block;
-  background-color: #ffbe11;
+  background-color: #1e40af;
   color: #333;
   font-family: "Onest-Bold";
   padding: 0.5rem 1.5rem;
@@ -2401,16 +2419,13 @@ Aqui van todas las configuraciones referentes a la typografia
   text-align: center;
   background-color: #4E5150;
   color: #fff;
-  /* ---------- Elementos iniciales ocultos ---------- */
-  /* ---------- Top label ---------- */
-  /* ---------- Títulos ---------- */
-  /* ---------- Grid de expertos ---------- */
-  /* ---------- Tarjetas ---------- */
-  /* ---------- Responsive ---------- */
 }
 .block-c__experts-team .experts-container {
   max-width: 1200px;
   margin: 0 auto;
+}
+.block-c__experts-team {
+  /* ---------- Elementos iniciales ocultos ---------- */
 }
 .block-c__experts-team .top-label,
 .block-c__experts-team .experts-title,
@@ -2427,15 +2442,21 @@ Aqui van todas las configuraciones referentes a la typografia
   opacity: 1;
   transform: translateY(0);
 }
+.block-c__experts-team {
+  /* ---------- Top label ---------- */
+}
 .block-c__experts-team .top-label {
   display: inline-block;
-  background-color: #ffbe11;
+  background-color: #1e40af;
   color: #333;
   font-family: "Onest-Bold";
   padding: 0.5rem 1.5rem;
   border-radius: 5px;
   font-size: 1.4rem;
   margin-bottom: 2rem;
+}
+.block-c__experts-team {
+  /* ---------- Títulos ---------- */
 }
 .block-c__experts-team .experts-title {
   font-size: 4rem;
@@ -2449,10 +2470,16 @@ Aqui van todas las configuraciones referentes a la typografia
   margin-bottom: 2.5rem;
   font-family: "Onest-Regular";
 }
+.block-c__experts-team {
+  /* ---------- Grid de expertos ---------- */
+}
 .block-c__experts-team .experts-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 2rem;
+}
+.block-c__experts-team {
+  /* ---------- Tarjetas ---------- */
 }
 .block-c__experts-team .expert-card {
   background: #fff;
@@ -2485,6 +2512,9 @@ Aqui van todas las configuraciones referentes a la typografia
   font-size: 1rem;
   font-family: "Onest-Light";
   color: #919191;
+}
+.block-c__experts-team {
+  /* ---------- Responsive ---------- */
 }
 @media screen and (max-width : 576px) {
   .block-c__experts-team {
@@ -2552,7 +2582,7 @@ Aqui van todas las configuraciones referentes a la typografia
 .container-contact-main__content-description hr {
   height: 0.4rem;
   width: 10rem;
-  background-color: #FFBE11;
+  background-color: #1E40AF;
   opacity: 1;
   margin: 0;
 }
@@ -2609,7 +2639,7 @@ Aqui van todas las configuraciones referentes a la typografia
   border: none;
 }
 .container-contact-main__content-form input[type=submit] {
-  background-color: #FFBE11;
+  background-color: #1E40AF;
   color: #100E02;
   font-family: "Onest-Bold";
 }
@@ -2619,6 +2649,231 @@ Aqui van todas las configuraciones referentes a la typografia
   width: 100%;
 }
 
+.feedback-section {
+  text-align: center;
+  padding: 80px 11rem;
+}
+.feedback-section .feedback-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px dashed #1E40AF;
+  padding: 40px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+}
+.feedback-section .feedback-card h2 {
+  font-family: "Onest-Black";
+  color: #fff;
+  margin-bottom: 10px;
+}
+.feedback-section .feedback-card p {
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 30px;
+}
+.feedback-section .rating-stars {
+  font-size: 2rem;
+  color: #FFD700;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.feedback-section .rating-stars i:hover {
+  transform: scale(1.2);
+  transition: 0.3s;
+}
+.feedback-section .btn-review {
+  background: #1E40AF;
+  color: #fff;
+  padding: 15px 40px;
+  border-radius: 5px;
+  font-family: "Onest-Bold";
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.4s;
+}
+.feedback-section .btn-review:hover {
+  background: #fff;
+  color: #1E40AF;
+}
+
+/* --- Variables de Referencia (Asegúrate de tenerlas) --- */
+/* --- Sección Principal --- */
+.before-after-section {
+  position: relative;
+  background-color: #050505;
+  background-image: radial-gradient(ellipse at 80% 80%, rgba(30, 64, 175, 0.2) 0%, transparent 60%), linear-gradient(135deg, rgba(255, 255, 255, 0.03) 25%, transparent 25%), radial-gradient(circle at center, rgba(30, 64, 175, 0.05) 0%, rgba(0, 0, 0, 0.4) 100%);
+  background-size: cover, 80px 80px, cover;
+  background-blend-mode: normal, screen, normal;
+  padding: 100px 11rem;
+}
+@media (max-width: 1200px) {
+  .before-after-section {
+    padding: 80px 4rem;
+  }
+}
+@media (max-width: 768px) {
+  .before-after-section {
+    padding: 60px 1.5rem;
+  }
+}
+.before-after-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  background-size: 40px 40px;
+  pointer-events: none;
+  z-index: 1;
+}
+.before-after-section .container {
+  position: relative;
+  z-index: 2;
+}
+.before-after-section .section-header {
+  margin-bottom: 60px;
+}
+.before-after-section .section-header h2 {
+  color: #fff;
+  font-family: "Onest-Black";
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+@media (max-width: 768px) {
+  .before-after-section .section-header h2 {
+    font-size: 2rem;
+  }
+}
+.before-after-section .section-header p {
+  color: #1E40AF;
+  font-family: "Onest-Bold";
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.before-after-section .project-card {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(30, 64, 175, 0.3);
+  padding: 30px;
+  border-radius: 15px;
+  margin-bottom: 50px;
+  backdrop-filter: blur(10px);
+}
+@media (max-width: 768px) {
+  .before-after-section .project-card {
+    padding: 15px;
+  }
+}
+.before-after-section .project-card h3 {
+  color: #fff;
+  font-family: "Onest-Bold";
+  margin-bottom: 10px;
+}
+.before-after-section .project-card .blueprint-line {
+  width: 50px;
+  height: 2px;
+  background: #1E40AF;
+  margin-bottom: 25px;
+}
+.before-after-section {
+  /* --- El Slider (Juxtapose) --- */
+}
+.before-after-section .slider-wrapper {
+  margin-bottom: 30px;
+  width: 100%;
+}
+.before-after-section .slider-wrapper .juxtapose {
+  width: 100% !important;
+  aspect-ratio: 16/9;
+  border: 2px solid #1E40AF;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+}
+@media (max-width: 768px) {
+  .before-after-section .slider-wrapper .juxtapose {
+    aspect-ratio: 4/3;
+  }
+}
+.before-after-section .slider-wrapper .juxtapose img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.before-after-section .slider-wrapper .juxtapose .jx-handle {
+  background-color: #1E40AF !important;
+}
+.before-after-section .slider-wrapper .juxtapose .jx-arrow.jx-left, .before-after-section .slider-wrapper .juxtapose .jx-arrow.jx-right {
+  border-color: transparent transparent transparent #ffffff !important;
+}
+.before-after-section .slider-wrapper .juxtapose .jx-label {
+  background: rgba(30, 64, 175, 0.8) !important;
+  font-family: "Onest-Bold" !important;
+  text-transform: uppercase !important;
+  color: #ffffff !important;
+}
+@media (max-width: 768px) {
+  .before-after-section .slider-wrapper .juxtapose .jx-label {
+    font-size: 10px !important;
+    padding: 4px 8px !important;
+  }
+}
+.before-after-section {
+  /* --- Video Wrapper --- */
+}
+.before-after-section .video-wrapper {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.before-after-section .video-wrapper video {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  display: block;
+  filter: brightness(0.8);
+}
+@media (max-width: 768px) {
+  .before-after-section .video-wrapper video {
+    height: 300px;
+  }
+}
+.before-after-section .video-wrapper .video-overlay-tags {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  z-index: 3;
+  color: #fff;
+  font-family: "Onest-Regular";
+  font-size: 0.7rem;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 5px 12px;
+  border-left: 3px solid #1E40AF;
+}
+.before-after-section .video-wrapper .video-overlay-tags .dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: red;
+  border-radius: 50%;
+  margin-right: 8px;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .product-internal__container > div {
   max-height: 45rem;
 }
@@ -2636,7 +2891,7 @@ Aqui van todas las configuraciones referentes a la typografia
   text-transform: capitalize;
 }
 .product-internal__container-information .category-product a {
-  color: #FFBE11;
+  color: #1E40AF;
 }
 .product-internal__container-information p {
   color: #919191;

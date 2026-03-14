@@ -1,0 +1,130 @@
+/* --- Variables de Referencia (Asegúrate de tenerlas) --- */
+$azul_logo: #1E40AF;
+$blanco: #ffffff;
+$negro_base: #050505;
+
+/* --- Sección Principal --- */
+.before-after-section {
+    position: relative;
+    background-color: $negro_base;
+    background-image: 
+        radial-gradient(ellipse at 80% 80%, rgba(30, 64, 175, 0.2) 0%, transparent 60%),
+        linear-gradient(135deg, rgba(255,255,255,0.03) 25%, transparent 25%),
+        radial-gradient(circle at center, rgba(30, 64, 175, 0.05) 0%, rgba(0, 0, 0, 0.4) 100%);
+    background-size: cover, 80px 80px, cover;
+    background-blend-mode: normal, screen, normal;
+    padding: 100px 11rem; // Padding PC
+
+    // Responsive Padding
+    @media (max-width: 1200px) { padding: 80px 4rem; }
+    @media (max-width: 768px) { padding: 60px 1.5rem; }
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0; left: 0; width: 100%; height: 100%;
+        background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+        background-size: 40px 40px; 
+        pointer-events: none;
+        z-index: 1;
+    }
+
+    .container { position: relative; z-index: 2; }
+
+    .section-header {
+        margin-bottom: 60px;
+        h2 { 
+            color: #fff; font-family: 'Onest-Black'; font-size: 3rem; text-transform: uppercase; 
+            @media (max-width: 768px) { font-size: 2rem; }
+        }
+        p { color: $azul_logo; font-family: 'Onest-Bold'; text-transform: uppercase; letter-spacing: 2px; }
+    }
+
+    .project-card {
+        background: rgba(255, 255, 255, 0.02);
+        border: 1px solid rgba(30, 64, 175, 0.3);
+        padding: 30px;
+        border-radius: 15px;
+        margin-bottom: 50px;
+        backdrop-filter: blur(10px);
+        @media (max-width: 768px) { padding: 15px; }
+
+        h3 { color: #fff; font-family: 'Onest-Bold'; margin-bottom: 10px; }
+        .blueprint-line { width: 50px; height: 2px; background: $azul_logo; margin-bottom: 25px; }
+    }
+
+    /* --- El Slider (Juxtapose) --- */
+    .slider-wrapper {
+        margin-bottom: 30px;
+        width: 100%;
+
+        .juxtapose {
+            width: 100% !important;
+            aspect-ratio: 16 / 9; // CRÍTICO: Mantiene la altura para que no desaparezca
+            border: 2px solid $azul_logo;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+
+            @media (max-width: 768px) { aspect-ratio: 4 / 3; } // Más alto en móvil
+
+            img { width: 100%; height: 100%; object-fit: cover; }
+
+            .jx-handle { background-color: $azul_logo !important; }
+            .jx-arrow.jx-left, .jx-arrow.jx-right { border-color: transparent transparent transparent $blanco !important; }
+            .jx-label {
+                background: rgba(30, 64, 175, 0.8) !important; 
+                font-family: 'Onest-Bold' !important;
+                text-transform: uppercase !important;
+                color: $blanco !important;
+                @media (max-width: 768px) { font-size: 10px !important; padding: 4px 8px !important; }
+            }
+        }
+    }
+
+    /* --- Video Wrapper --- */
+    .video-wrapper {
+        position: relative;
+        border-radius: 8px;
+        overflow: hidden;
+        border: 1px solid rgba(255,255,255,0.1);
+        
+        video {
+            width: 100%;
+            height: 500px; // Reducido un poco para balance visual
+            object-fit: cover;
+            display: block;
+            filter: brightness(0.8);
+            @media (max-width: 768px) { height: 300px; }
+        }
+
+        .video-overlay-tags {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            z-index: 3;
+            color: #fff;
+            font-family: 'Onest-Regular';
+            font-size: 0.7rem;
+            background: rgba(0,0,0,0.6);
+            padding: 5px 12px;
+            border-left: 3px solid $azul_logo;
+
+            .dot {
+                display: inline-block;
+                width: 8px;
+                height: 8px;
+                background: red;
+                border-radius: 50%;
+                margin-right: 8px;
+                animation: pulse 1.5s infinite;
+            }
+        }
+    }
+}
+
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.3; }
+    100% { opacity: 1; }
+}
