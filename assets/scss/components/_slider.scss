@@ -31,7 +31,7 @@
         }
 
         span {
-            color: $amarillo;
+            color: $azul_logo;
             font-family: $principal-bold;
         }
 
@@ -52,7 +52,7 @@
         // ✅ Botones ahora usan el componente global
         a {
             @extend .mec-button;
-            background-color: $amarillo;
+            background-color: $azul_logo;
             color: $negro;
             margin-left: 0 !important;
             font-family: $principal-bold;
@@ -144,7 +144,7 @@
 
 
     .splide__pagination__page {
-        background-color: $amarillo !important;
+        background-color: $azul_logo !important;
         opacity: 1 !important;
 
         &.is-active {

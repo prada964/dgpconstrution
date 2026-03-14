@@ -237,5 +237,19 @@ function register_acf_block_types(){
             'post_types' => array('post', 'page'),
         )
     );
+
+    // Antes y después
+    acf_register_block_type(
+        array(
+            'name' => 'Before and After',
+            'title' => __('Before and After'),
+            'description' => __('A dynamic block for showcasing transformations or comparisons with side-by-side images and descriptions. Perfect for demonstrating the impact of products or services.'),
+            'render_template' => 'templates/blocks/before_after.php',
+            'category' => VS_BLOCK_CATEGORY,
+            'icon' => 'format-image',
+            'align' => 'full',
+            'post_types' => array('post', 'page'),
+        )
+    );
    
 }

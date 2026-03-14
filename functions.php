@@ -64,9 +64,11 @@ function ces_mec_styles_scripts(){
 
     wp_register_style('mec-style', get_template_directory_uri() . '/assets/css/main.css', array(), ASSETS_VERSION, 'all');
     wp_enqueue_style('mec-style');
-
-  
-   
+    
+ 
+    wp_enqueue_style('juxtapose_css', 'https://cdn.knightlab.com/libs/juxtapose/latest/css/juxtapose.css', array(), ASSETS_VERSION, 'all');
+    
+    wp_enqueue_script('juxtapose_js', 'https://cdn.knightlab.com/libs/juxtapose/latest/js/juxtapose.min.js', array('jquery'), ASSETS_VERSION, true);
  
     wp_enqueue_script('custom-script', get_template_directory_uri() . '/assets/js/index.js', array('jquery'), ASSETS_VERSION, true);
 

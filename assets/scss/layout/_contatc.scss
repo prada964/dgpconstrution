@@ -34,7 +34,7 @@
             hr {
                 height: 0.4rem;
                 width: 10rem;
-                background-color: $amarillo;
+                background-color: $azul_logo;
                 opacity: 1;
                 margin: 0;
             }
@@ -95,7 +95,7 @@
             }
 
             input[type="submit"] {
-                background-color: $amarillo;
+                background-color: $azul_logo;
                 color: $negro;
                 font-family: $principal-bold;
             }
@@ -106,5 +106,47 @@
         padding: 0rem 2rem !important;
         justify-content: space-between;
         width: 100%;
+    }
+}
+
+.feedback-section {
+    
+    text-align: center;
+    padding: 80px 11rem;
+
+    .feedback-card {
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px dashed $azul_logo; // Estilo "Blueprint"
+        padding: 40px;
+        border-radius: 20px;
+        backdrop-filter: blur(10px);
+
+        h2 { font-family: 'Onest-Black'; color: #fff; margin-bottom: 10px; }
+        p { color: rgba(255,255,255,0.7); margin-bottom: 30px; }
+    }
+
+    .rating-stars {
+        font-size: 2rem;
+        color: #FFD700; // Dorado para las estrellas
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        cursor: pointer;
+
+        i:hover { transform: scale(1.2); transition: 0.3s; }
+    }
+
+    .btn-review {
+        background: $azul_logo;
+        color: #fff;
+        padding: 15px 40px;
+        border-radius: 5px;
+        font-family: 'Onest-Bold';
+        text-decoration: none;
+        display: inline-block;
+        transition: 0.4s;
+
+        &:hover { background: #fff; color: $azul_logo; }
     }
 }

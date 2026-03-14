@@ -30,8 +30,8 @@
     }
 
     &.register-button {
-        background: $amarillo;
-        color: $negro;
+        background: $azul_logo;
+        color: $blanco;
     }
 
     &.visit-button {
@@ -40,7 +40,7 @@
     }
 
     &.outline-button {
-        border: 1px solid $amarillo;
+        border: 1px solid $azul_logo;
         background: none !important;
         color: $blanco !important;
     }
@@ -83,7 +83,7 @@
 .quoter-action-button {
     margin-top: 2rem;
     width: fit-content;
-    background: $amarillo;
+    background: $azul_logo;
     color: $blanco;
     font-family: $principal;
     font-size: 1.8rem;
