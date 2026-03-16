@@ -3,9 +3,9 @@
     "title": "Bloque  redes sociales",
     "fields": [
         {
-            "key": "field_65c5c1a8d1d08",
-            "label": "Redes sociales",
-            "name": "redes_sociales",
+            "key": "field_69b5e9faa6bde",
+            "label": "Redes",
+            "name": "redes",
             "aria-label": "",
             "type": "repeater",
             "instructions": "",
@@ -21,16 +21,16 @@
             "min": 0,
             "max": 0,
             "collapsed": "",
-            "button_label": "Agregar Fila",
+            "button_label": "Add Row",
             "rows_per_page": 20,
             "sub_fields": [
                 {
-                    "key": "field_65c5c1ebd1d09",
+                    "key": "field_69b5ea0fa6bdf",
                     "label": "Icono",
                     "name": "icono",
                     "aria-label": "",
                     "type": "text",
-                    "instructions": "Los iconos debes extraerlos de en esta url : https:\/\/fontawesome.com\/icons\/",
+                    "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
@@ -43,10 +43,10 @@
                     "placeholder": "",
                     "prepend": "",
                     "append": "",
-                    "parent_repeater": "field_65c5c1a8d1d08"
+                    "parent_repeater": "field_69b5e9faa6bde"
                 },
                 {
-                    "key": "field_65c5c1f3d1d0a",
+                    "key": "field_69b5ea1ca6be0",
                     "label": "Enlace",
                     "name": "enlace",
                     "aria-label": "",
@@ -61,7 +61,7 @@
                     },
                     "default_value": "",
                     "placeholder": "",
-                    "parent_repeater": "field_65c5c1a8d1d08"
+                    "parent_repeater": "field_69b5e9faa6bde"
                 }
             ]
         }
@@ -84,5 +84,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1707459321
+    "modified": 1773529641
 }

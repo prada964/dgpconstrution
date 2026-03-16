@@ -36,6 +36,19 @@ function register_acf_block_types(){
             'post_types' => array('post', 'page'),
         )
     );
+    acf_register_block_type( 
+      array(
+            'name' => 'Bloque de redes sociales',
+            'title' => __('Bloque de redes sociales flotantes'),
+            'description' => __('Bloque para configurar redes sociales'),
+            'render_template' =>'templates/blocks/redes_sociales.php',
+            'category' => VS_BLOCK_CATEGORY,
+            'icon' => 'table-col-after',
+            'align' => 'full',
+            'post_types' => array('post', 'page'),
+        )
+    );
+
     //social media
     acf_register_block_type( 
         array(

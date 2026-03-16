@@ -1,0 +1,25 @@
+.redes-sociales {
+    position: fixed;
+    right: 2%;
+    bottom: 48%;
+    z-index: 999999;
+    @media #{$extra-small} {
+        bottom: 30%;  
+    }
+    &__content {
+        background-color: $azul_hover;
+        width: fit-content;
+        padding: 0.8rem 1.1rem;
+        border-radius: 3rem;
+        margin-bottom: 1rem;
+        box-shadow: -1px 2px 7px 0px #4f4e4e85;
+        
+
+        a{
+            color: $blanco;
+            font-size: 3.5rem;  
+        }
+    }
+    
+}
+
